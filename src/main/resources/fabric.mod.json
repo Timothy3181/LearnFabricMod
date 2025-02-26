@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "learnmod",
+	"version": "${version}",
+	"name": "LearnMod",
+	"description": "This is a tutorial mod.",
+	"authors": [
+		"Timothy3181"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/learnmod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.timothy.learnmod.LearnMod"
+		],
+		"fabric-datagen": [
+			"com.timothy.learnmod.LearnModDataGenerator"
+		],
+		"client": [
+			"com.timothy.learnmod.LearnModClient"
+		]
+	},
+	"mixins": [
+		"learnmod.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.10",
+		"minecraft": "~1.21.4",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
